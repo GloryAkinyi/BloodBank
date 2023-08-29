@@ -1,0 +1,49 @@
+{% extends 'home_base.html' %}
+
+
+{% block content %}
+
+
+<!--1st post -->
+<div class="post clearfix">
+    <!-- post for image -->
+    <div class="postimg float-left">
+        <img src="{{ our_vision.body_img.url }}" class="img-thumbnail" alt="Post 1st image">
+    </div>
+
+    <!-- post for blog -->
+    <div class="post_dec float-right">
+        <h2 class="font-weight-bold">{{ our_vision.title }}</h2>
+        <p class="text-break">{{ our_vision.body_text }}</p>
+    </div>
+</div>
+
+<!-- 2nd post -->
+<div class="post2 clearfix">
+    <!-- pors for image -->
+    <div class="postimg2 float-right">
+        <img src="{{ donor_opinion.body_img.url }}" class="img-thumbnail" alt="Post 1st image">
+    </div>
+    <!-- post for blog -->
+    <div class="post_dec2 float-left">
+        <h2 class="font-weight-bold">{{ donor_opinion.title }}</h2>
+        <p class="text-break text-justify">{{ donor_opinion.body_text }}</p>
+    </div>
+</div>
+
+<!-- 3dr post -->
+<div class="post3 clearfix">
+    <!-- post for image -->
+    <div class="postimg3 float-left">
+        <img src="{{ user_opinion.body_img.url }}" class="img-thumbnail" alt="Post 1st image">
+    </div>
+    <!-- post for blog -->
+    <div class="post_dec3 float-right">
+        <h2 class="font-weight-bold">{{ user_opinion.title }}</h2>
+        <p class="text-justify">{{ user_opinion.body_text }}</p>
+    </div>
+</div>
+    
+
+{% endblock %}
+

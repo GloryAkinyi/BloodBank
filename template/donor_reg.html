@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+    <div class="container-fluid">
+        <div class="form_body">
+            <h2 class="text-center font-">Blood Donor Registration Form</h2>
+            <form action="{% url 'dregdisplay' %}" method="post">
+                {% csrf_token %}
+                {{forms.as_p}}
+                <button type="submit" class="btn reg_btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock  %}
